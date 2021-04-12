@@ -1,0 +1,123 @@
+﻿body {
+	
+	background-image:url('tl.png');
+	background-size:cover;
+	
+	
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media (-ms-view-state: snapped) {
+    #game {
+	    width:300px;
+	    height:600px;
+	    margin-top: 3%;
+	    background-image: url('tl.png');
+    }
+    #controlBox {
+		float: left;
+		left:20%;
+		margin-left:30px;
+		top: 620px;
+    }
+	#controls {
+		position:relative;
+		left:-300px;
+		top: -30px;
+	}
+	#footer {
+		display: none;
+	}
+    #directions {
+        display:none;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+#game {
+	width:400px;
+	height:600px;
+	position: absolute;
+	left: 46%;
+	margin-left: -130px;
+	margin-top: 116px;
+	float: left;
+	
+}
+
+.gameCanvas {
+
+    position: absolute;
+}
+
+#controlBox {
+	width: 120px;
+	position: absolute;
+	float: right;
+	right:50%;
+	margin-right: -300px;
+	margin-top: 3%;
+
+}
+
+#controls {
+	position: absolute;
+	margin-top: 130px;
+	margin-left: 200px;
+	width: 100px;
+	
+	
+}
+
+#controls > button {
+	margin: 0px 5px 5px 0px;
+}
+
+#nextBlock {
+	position:absolute;
+	margin-left:-600px;
+	margin-top: 200px;
+	width: 120px;
+	height: 140px;
+	background-image: url('cien.png');
+	
+}
+
+#footer {
+	position: absolute;
+	bottom: 3%;
+	left: 3%;
+}
+
+#blocker {
+    display: none;
+    z-index: 100;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+}
+#gameover {
+    opacity:0.5;
+    display: none;
+    z-index: 1000;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+}
+
+#directions {
+	position: absolute;
+	width: 200px;
+	bottom: 10%;
+	right: 5%;
+}
+#restart {
+	display: none;
+}
